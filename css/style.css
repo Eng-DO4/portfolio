@@ -24,6 +24,10 @@ a{
 }
 
 header a{
+    color: #976403;
+}
+
+header a:hover{
     color: #ffa500;
 }
 
@@ -41,20 +45,22 @@ nav a{
 }
 
 nav a:hover{
-    /* border-bottom: 3px solid #ffa500; */
-    color: #fff;
-    background-color: #ffa500;
+    border-bottom: 3px solid #ffa500;
 }
 
 section{
     min-height: 100vh;
     padding: 0 100px;
     width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+section>div{
+    width: 100%;
 }
 
 .main{
-    display: flex;
-    align-items: center;
     background-color: #000;
 }
 
@@ -86,6 +92,10 @@ section{
     font-size: 1.3em;
 }
 
+.social-icons a:hover{
+    color: #ffa500;
+}
+
 .main-btn{
     background-color: #ffa500;
     color: #fff;
@@ -100,6 +110,17 @@ section{
 
 .main-btn:hover{
     transform: scale(1.2);
-    background-color: #000;
 }
 
+.title{
+    color: #976403;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+}
