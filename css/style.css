@@ -19,8 +19,11 @@ header{
     align-items: center;
 }
 
-header a{
+a{
     text-decoration: none;
+}
+
+header a{
     color: #ffa500;
 }
 
@@ -32,23 +35,24 @@ header a{
 nav a{
     font-size: 1.2em;
     font-weight: 300;
-    padding: 2px;
-    padding-bottom: 10px;
+    padding: 10px;
     margin-left: 30px;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 nav a:hover{
-    border-bottom: 3px solid #ffa500;
+    /* border-bottom: 3px solid #ffa500; */
+    color: #fff;
+    background-color: #ffa500;
 }
 
 section{
+    min-height: 100vh;
     padding: 0 100px;
+    width: 100%;
 }
 
 .main{
-    min-height: 100vh;
-    width: 100%;
     display: flex;
     align-items: center;
     background-color: #000;
@@ -56,17 +60,46 @@ section{
 
 .main h2{
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
 .main h2 span{
     color: #ffa500;
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
+    font-size: 3em;
+    font-weight: 600;
 }
 
 .main h3{
+    font-size: 1.7em;
+    font-weight: 500;
     color: #fff;
     letter-spacing: 1px;
+    margin-bottom: 35px;
 }
+
+.social-icons a{
+    color: #fff;
+    padding: 10px 20px 10px 0;
+    font-size: 1.3em;
+}
+
+.main-btn{
+    background-color: #ffa500;
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    display: inline-block;
+    margin: 35px 0;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover{
+    transform: scale(1.2);
+    background-color: #000;
+}
+
